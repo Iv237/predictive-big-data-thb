@@ -13,10 +13,10 @@ Frühe Hinweise auf mögliche Studienabbrüche können Hochschulen dabei unterst
 1.3 Erfolgskriterien
 Die Erfolgskriterien werden nach Sichtung der Daten und Prüfung der Klassenverteilung final festgelegt. Als fachliche Leitplanken gelten:
 
-● Das Modell soll Abbrecher möglichst zuverlässig erkennen.
-● Interpretierbarkeit hat Vorrang vor maximaler Komplexität.
-● Datenschutz und rechtliche Freigabe sind zwingende Voraussetzungen.
-● Das Ergebnis muss im Rahmen eines Semesterprojekts reproduzierbar und nachvollziehbar sein.
+- Das Modell soll Abbrecher möglichst zuverlässig erkennen.
+- Interpretierbarkeit hat Vorrang vor maximaler Komplexität.
+- Datenschutz und rechtliche Freigabe sind zwingende Voraussetzungen.
+- Das Ergebnis muss im Rahmen eines Semesterprojekts reproduzierbar und nachvollziehbar sein.
 
 
 ### 2. Data Understanding
