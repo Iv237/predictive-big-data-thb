@@ -86,7 +86,8 @@ Interpretierbarkeit soll Vorrang vor maximaler Komplexität haben.
 Zur Modellbewertung werden ein stratifizierter Train-Test-Split und eine 5-fache Kreuzvalidierung genutzt. Zusätzlich wird auf mögliche Klassenungleichgewichte geachtet. Falls notwendig, werden geeignete Verfahren wie Class Weights oder Sampling-Strategien eingesetzt.
 
 4.4 Metriken
-Die Hauptmetrik ist Recall, da möglichst wenige Abbrecher übersehen werden sollen. Ergänzend werden Precision, Confusion Matrix und gegebenenfalls F1-Score betrachtet. Konkrete Zielwerte werden erst nach Analyse der Datenverteilung festgelegt. 
+Die Hauptmetrik ist Recall, da möglichst wenige Abbrecher übersehen werden sollen. Ergänzend werden Precision, Confusion Matrix und gegebenenfalls F1-Score betrachtet. Konkrete Zielwerte werden erst nach Analyse der
+Datenverteilung festgelegt. 
 
 4.5 Einsatzszenario als Konzept
 Ein möglicher späterer Einsatz wäre eine semestrische Risikoeinschätzung für Studienberater. Dieser Einsatz ist jedoch nicht Teil des aktuellen Semesterumfangs und wird nur als Ausblick beschrieben.
