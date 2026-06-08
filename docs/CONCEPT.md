@@ -18,6 +18,7 @@ Die Erfolgskriterien werden nach Sichtung der Daten und Prüfung der Klassenvert
 ● Datenschutz und rechtliche Freigabe sind zwingende Voraussetzungen.
 ● Das Ergebnis muss im Rahmen eines Semesterprojekts reproduzierbar und nachvollziehbar sein.
 
+
 ### 2. Data Understanding
 2.1 Datenquellen und Datenzugang
 Die geplanten Daten stammen aus dem internen Hochschul-Informationssystem bzw. dem Campus-Management-System. Die Bereitstellung erfolgt nur, wenn Prüfungsamt und Studierendensekretariat die Daten zeitnah, anonymisiert bzw. stark pseudonymisiert und rechtlich freigegeben zur Verfügung stellen.
