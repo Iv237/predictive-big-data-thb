@@ -29,22 +29,22 @@ Untersucht werden Studierende, die mindestens das erste und zweite Semester abge
 
 2.3 Geplante Merkmale
 Für die Semester 1 und 2 werden folgende Merkmalsgruppen vorgesehen:
-● Prüfungsleistungen: Anzahl bestandener und nicht bestandener Prüfungen, Durchschnittsnote, Rücktritte, Fehlversuche.
-● Studienorganisation: Anzahl angemeldeter und tatsächlich abgelegter Prüfungen, Anzahl belegter Lehrveranstaltungen.
-● Zeitliche Faktoren: früher oder später Prüfungsanmeldezeitpunkt, Rücktrittsmuster kurz vor Prüfungen.
-● Soziodemographische Merkmale: Studiengang, HZB-Note, Alter bei Studienbeginn, Geschlecht in pseudonymisierter Form.
+- Prüfungsleistungen: Anzahl bestandener und nicht bestandener Prüfungen, Durchschnittsnote, Rücktritte, Fehlversuche.
+- Studienorganisation: Anzahl angemeldeter und tatsächlich abgelegter Prüfungen, Anzahl belegter Lehrveranstaltungen.
+- Zeitliche Faktoren: früher oder später Prüfungsanmeldezeitpunkt, Rücktrittsmuster kurz vor Prüfungen.
+- Soziodemographische Merkmale: Studiengang, HZB-Note, Alter bei Studienbeginn, Geschlecht in pseudonymisierter Form.
 
 2.4 Zielvariable Die Zielvariable lautet:
-● Studienabbruch_S3 = 1: Studium wurde bis Ende des dritten Semesters abgebrochen.
-● Studienabbruch_S3 = 0: Studium wurde fortgeführt.
+- Studienabbruch_S3 = 1: Studium wurde bis Ende des dritten Semesters abgebrochen.
+- Studienabbruch_S3 = 0: Studium wurde fortgeführt.
 Wichtig ist eine saubere fachliche Abgrenzung. Ein Studiengangswechsel, ein Urlaubssemester oder ein Hochschulwechsel dürfen nicht automatisch als Abbruch gewertet werden.
 
 2.5 Datenqualität und Risiken
 Vor der eigentlichen Modellierung werden typische Datenqualitätsrisiken geprüft:
-● mögliche Klassenungleichverteilung,
-● fehlende Werte,
-● historische Lücken durch Systemwechsel,
-● unklare oder uneinheitliche Definitionen in den Quelldaten.
+- mögliche Klassenungleichverteilung,
+- fehlende Werte,
+- historische Lücken durch Systemwechsel,
+- unklare oder uneinheitliche Definitionen in den Quelldaten.
 
 ### 3. Data Preparation
 3.1 Vorgehen und Werkzeuge
@@ -58,20 +58,20 @@ Die wesentlichen Schritte sind:
 
 3.2 Feature Engineering
 Aus den Rohdaten werden aggregierte Merkmale gebildet, zum Beispiel:
-● Bestehensquote_S1 und Bestehensquote_S2,
-● Anmeldungsquote_S1 und Anmeldungsquote_S2,
-● Notendurchschnitt_S1 und Notendurchschnitt_S2,
-● Rücktrittsrate_S1 und Rücktrittsrate_S2,
-● Veränderung der Bestehensquote zwischen S1 und S2.
+- Bestehensquote_S1 und Bestehensquote_S2,
+- Anmeldungsquote_S1 und Anmeldungsquote_S2,
+- Notendurchschnitt_S1 und Notendurchschnitt_S2,
+- Rücktrittsrate_S1 und Rücktrittsrate_S2,
+- Veränderung der Bestehensquote zwischen S1 und S2.
 Diese Merkmale sollen eine kompakte und interpretierbare Beschreibung der bisherigen Studienentwicklung ermöglichen.
 
 3.3 Datenschutz und organisatorische Vorgaben Für die Datenverarbeitung gelten folgende Vorgaben:
-● keine Rohdaten auf privaten Geräten,
-● Zugriff nur für autorisierte Projektmitglieder,
-● keine Weitergabe an Dritte,
-● dokumentierter Speicherort,
-● Löschung der Rohdaten nach Projektabschluss,
-● Nutzung ausschließlich für wissenschaftliche Zwecke im Rahmen
+- keine Rohdaten auf privaten Geräten,
+- Zugriff nur für autorisierte Projektmitglieder,
+- keine Weitergabe an Dritte,
+- dokumentierter Speicherort,
+- Löschung der Rohdaten nach Projektabschluss,
+- Nutzung ausschließlich für wissenschaftliche Zwecke im Rahmen
 des Semesters. 
 
 ### 4. Modeling
@@ -80,10 +80,10 @@ Da eine binäre Zielvariable vorliegt, handelt es sich um ein überwachtes Lernp
 
 4.2 Modellwahl
 Im Fokus stehen interpretierbare und praxisnahe Verfahren:
-● Logistische Regression als Baseline,
-● Decision Tree für einfache Nachvollziehbarkeit,
-● Random Forest als robuster Vergleich,
-● XGBoost nur optional als zusätzliches Vergleichsmodell.
+- Logistische Regression als Baseline,
+- Decision Tree für einfache Nachvollziehbarkeit,
+- Random Forest als robuster Vergleich,
+- XGBoost nur optional als zusätzliches Vergleichsmodell.
 Interpretierbarkeit soll Vorrang vor maximaler Komplexität haben.
 
 4.3 Validierung
@@ -122,9 +122,9 @@ Falls die Hochschuldaten nicht rechtzeitig verfügbar sind, wird ein öffentlich
 
 7.3 Iterationspunkte
 Gemäß CRISP-DM sind Rücksprünge zwischen den Phasen ausdrücklich eingeplant:
-● von Data Understanding zurück zu Business Understanding, falls die Daten die Fragestellung nicht ausreichend abbilden,
-● von Modeling zurück zu Data Preparation, falls Feature Engineering verbessert werden muss,
-● von Evaluation zurück zu Modeling, falls die Zielwerte nicht erreicht werden.
+- von Data Understanding zurück zu Business Understanding, falls die Daten die Fragestellung nicht ausreichend abbilden,
+- von Modeling zurück zu Data Preparation, falls Feature Engineering verbessert werden muss,
+- von Evaluation zurück zu Modeling, falls die Zielwerte nicht erreicht werden.
 
 ### 8. Schlussbemerkung
 Das Projekt ist fachlich sinnvoll und für ein Semesterprojekt geeignet, wenn Datenzugang, Datenschutz und Umfang realistisch begrenzt werden. Die stärkste Version des Konzepts ist eine interpretierbare Machbarkeitsstudie mit klarer Fragestellung, sauberer Datenschutzstruktur und einem Fallback-Datensatz als Absicherung.
